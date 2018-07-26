@@ -13,8 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        'App\Console\Commands\DailySettlementUserAsset',
-        'App\Console\Commands\DailySettlementPlatformAsset',
+        //
     ];
 
     /**
@@ -25,8 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('daily-settlement:user-asset')->daily();
-        $schedule->command('daily-settlement:platform-asset')->daily();
+        // $schedule->command('inspire')
+        //          ->hourly();
     }
 
     /**

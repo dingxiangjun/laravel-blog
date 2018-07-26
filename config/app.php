@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'PRC',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'zh-CN',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -121,7 +121,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'daily'),
+    'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
@@ -167,10 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
-		//验证码
-		Mews\Captcha\CaptchaServiceProvider::class,
-		//权限包
-		Spatie\Permission\PermissionServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -179,8 +176,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-		// ajax 响应
-		App\Providers\ResponseMacroServiceProvider::class,
 
     ],
 
@@ -230,8 +225,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-		//验证码
-		'Captcha' => Mews\Captcha\Facades\Captcha::class,
+
     ],
 
 ];

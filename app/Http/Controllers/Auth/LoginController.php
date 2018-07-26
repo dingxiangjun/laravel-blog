@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Extensions\Auth\AuthenticatesLogout;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -19,16 +18,14 @@ class LoginController extends Controller
     |
     */
 
-	use AuthenticatesUsers, AuthenticatesLogout {
-		AuthenticatesLogout::logout insteadof AuthenticatesUsers;
-	}
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
-    protected $redirectTo = '/home/user';
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
