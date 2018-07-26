@@ -1,0 +1,87 @@
+.login {
+    width: 100%;
+    min-height: 950px;
+    background: url(../img/seller_login_bg.jpg) center center no-repeat;
+}
+.login-warp {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+.login-container {
+    width: 900px;
+    height: auto;
+    margin: -300px auto 0;
+    overflow: hidden;
+}
+.login-container .logo {
+    text-align: center;
+}
+.login-container .container {
+    width: 900px;
+    height: 440px;
+    background: url(../img/container_bg.png) no-repeat;
+    margin-top: 30px;
+}
+.login-container .container .warp {
+    width: 518px;
+    margin-left: 350px;
+
+}
+.login-container .container .warp .content {
+     width: 270px;
+     margin: 0 auto;
+     padding-top: 20px;
+ }
+.login-container .container .warp  .title {
+    margin-top: 38px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.container .warp .content  .title  h3 {
+    font-size: 30px;
+    color: #7f6f67;
+    line-height: 32px
+ }
+.login-container .container .warp  .title span {
+    background: url(../img/txt.png) 0 2px no-repeat;
+    height: 12px;
+    display: block;
+    margin-top: 5px;
+}
+.submit {
+    width: 100%;
+    border-radius: 50px;
+    height: 40px;
+    border: 0;
+    background: #ff7c3a;
+    color: #FFF;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Microsoft YaHei";
+}
+.input-text {
+    border: 0;
+    padding: 6px 28px 6px 42px;
+    background: #f4f4f4;
+    border-radius: 20px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+.layui-input, .layui-textarea {
+    padding-left: 32px;
+}
+.layui-form-item .icon {
+    width: 18px;
+    cursor: pointer;
+    height: 38px;
+    line-height: 38px;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
