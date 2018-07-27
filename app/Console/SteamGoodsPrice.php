@@ -19,7 +19,7 @@ class SteamGoodsPrice extends Command
 	 *
 	 * @var string
 	 */
-	protected $description = '价格监控';
+	protected $description = '价格监控1';
 
 
 	/**
